@@ -3,22 +3,95 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		7998B9852BCDE8AB008AF383 /* ScalesTrainerTestingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7998B9842BCDE8AB008AF383 /* ScalesTrainerTestingApp.swift */; };
-		7998B9872BCDE8AB008AF383 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7998B9862BCDE8AB008AF383 /* ContentView.swift */; };
 		7998B9892BCDE8AC008AF383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7998B9882BCDE8AC008AF383 /* Assets.xcassets */; };
 		7998B98C2BCDE8AC008AF383 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7998B98B2BCDE8AC008AF383 /* Preview Assets.xcassets */; };
+		7998B9A42BCDE929008AF383 /* ScalesTrainerTestingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7998B9932BCDE929008AF383 /* ScalesTrainerTestingApp.swift */; };
+		7998B9A52BCDE929008AF383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7998B9942BCDE929008AF383 /* Assets.xcassets */; };
+		7998B9A62BCDE929008AF383 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7998B9962BCDE929008AF383 /* Preview Assets.xcassets */; };
+		7998B9A72BCDE929008AF383 /* ScaleMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7998B9982BCDE929008AF383 /* ScaleMatcher.swift */; };
+		7998B9A82BCDE929008AF383 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7998B9992BCDE929008AF383 /* Logger.swift */; };
+		7998B9A92BCDE929008AF383 /* AudioKit_AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7998B99B2BCDE929008AF383 /* AudioKit_AudioManager.swift */; };
+		7998B9AA2BCDE929008AF383 /* TapHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7998B99C2BCDE929008AF383 /* TapHandler.swift */; };
+		7998B9AB2BCDE929008AF383 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7998B99D2BCDE929008AF383 /* Util.swift */; };
+		7998B9AC2BCDE929008AF383 /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7998B99E2BCDE929008AF383 /* Scale.swift */; };
+		7998B9AD2BCDE929008AF383 /* FFTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7998B9A02BCDE929008AF383 /* FFTView.swift */; };
+		7998B9AE2BCDE929008AF383 /* Logview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7998B9A12BCDE929008AF383 /* Logview.swift */; };
+		7998B9AF2BCDE929008AF383 /* InputDevicePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7998B9A22BCDE929008AF383 /* InputDevicePicker.swift */; };
+		7998B9B32BCDE959008AF383 /* AudioKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7998B9B22BCDE959008AF383 /* AudioKitUI */; };
+		7998B9B62BCDE976008AF383 /* AudioKitEX in Frameworks */ = {isa = PBXBuildFile; productRef = 7998B9B52BCDE976008AF383 /* AudioKitEX */; };
+		7998B9B92BCDE99E008AF383 /* SoundpipeAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7998B9B82BCDE99E008AF383 /* SoundpipeAudioKit */; };
+		7998B9BB2BCDF286008AF383 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7998B9BA2BCDF286008AF383 /* ContentView.swift */; };
+		79BF6BA82BCDF4110092CDDF /* one_note_48.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 79BF6B912BCDF4110092CDDF /* one_note_48.m4a */; };
+		79BF6BA92BCDF4110092CDDF /* one_note_60.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 79BF6B922BCDF4110092CDDF /* one_note_60.m4a */; };
+		79BF6BAA2BCDF4110092CDDF /* 2_oct_strt_72_slow.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 79BF6B932BCDF4110092CDDF /* 2_oct_strt_72_slow.m4a */; };
+		79BF6BAB2BCDF4110092CDDF /* 2_oct_strt_72_fast_staccato.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 79BF6B942BCDF4110092CDDF /* 2_oct_strt_72_fast_staccato.m4a */; };
+		79BF6BAC2BCDF4110092CDDF /* one_note_72.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 79BF6B952BCDF4110092CDDF /* one_note_72.m4a */; };
+		79BF6BAD2BCDF4110092CDDF /* 4_octave_major_10ths.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 79BF6B962BCDF4110092CDDF /* 4_octave_major_10ths.m4a */; };
+		79BF6BAE2BCDF4110092CDDF /* 4_octave_Aminor_rh.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 79BF6B972BCDF4110092CDDF /* 4_octave_Aminor_rh.m4a */; };
+		79BF6BAF2BCDF4110092CDDF /* 1_octave_slow.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 79BF6B982BCDF4110092CDDF /* 1_octave_slow.m4a */; };
+		79BF6BB02BCDF4110092CDDF /* 4_octave_fast.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 79BF6B992BCDF4110092CDDF /* 4_octave_fast.m4a */; };
+		79BF6BB12BCDF4110092CDDF /* 4_octave_Aminor_lh.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 79BF6B9A2BCDF4110092CDDF /* 4_octave_Aminor_lh.m4a */; };
+		79BF6BB22BCDF4110092CDDF /* violin_1_octave_slow.wav in Resources */ = {isa = PBXBuildFile; fileRef = 79BF6B9B2BCDF4110092CDDF /* violin_1_octave_slow.wav */; };
+		79BF6BB32BCDF4110092CDDF /* church_4_octave_Cmajor_RH.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 79BF6B9C2BCDF4110092CDDF /* church_4_octave_Cmajor_RH.m4a */; };
+		79BF6BB42BCDF4110092CDDF /* 2_oct_strt_72_medium.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 79BF6B9D2BCDF4110092CDDF /* 2_oct_strt_72_medium.m4a */; };
+		79BF6BB52BCDF4110092CDDF /* 4_octave_medium.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 79BF6B9E2BCDF4110092CDDF /* 4_octave_medium.m4a */; };
+		79BF6BB62BCDF4110092CDDF /* 3_octave_fast_48.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 79BF6B9F2BCDF4110092CDDF /* 3_octave_fast_48.m4a */; };
+		79BF6BB72BCDF4110092CDDF /* 4_octave_slow.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 79BF6BA02BCDF4110092CDDF /* 4_octave_slow.m4a */; };
+		79BF6BB82BCDF4110092CDDF /* 3_octave_slow_trim.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 79BF6BA12BCDF4110092CDDF /* 3_octave_slow_trim.m4a */; };
+		79BF6BB92BCDF4110092CDDF /* 2_oct_strt_72_slow_staccato.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 79BF6BA22BCDF4110092CDDF /* 2_oct_strt_72_slow_staccato.m4a */; };
+		79BF6BBA2BCDF4110092CDDF /* 4_octave_two_hands.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 79BF6BA32BCDF4110092CDDF /* 4_octave_two_hands.m4a */; };
+		79BF6BBB2BCDF4110092CDDF /* middle_C.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 79BF6BA42BCDF4110092CDDF /* middle_C.m4a */; };
+		79BF6BBC2BCDF4110092CDDF /* church_4_octave_AflatMajor_RH_fast.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 79BF6BA52BCDF4110092CDDF /* church_4_octave_AflatMajor_RH_fast.m4a */; };
+		79BF6BBD2BCDF4110092CDDF /* 4_octave_Aminor_both_hands.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 79BF6BA62BCDF4110092CDDF /* 4_octave_Aminor_both_hands.m4a */; };
+		79BF6BBE2BCDF4110092CDDF /* church_4_octave_Cmajor_LH.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 79BF6BA72BCDF4110092CDDF /* church_4_octave_Cmajor_LH.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7998B9812BCDE8AB008AF383 /* ScalesTrainerTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScalesTrainerTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7998B9842BCDE8AB008AF383 /* ScalesTrainerTestingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalesTrainerTestingApp.swift; sourceTree = "<group>"; };
-		7998B9862BCDE8AB008AF383 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7998B9882BCDE8AC008AF383 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7998B98B2BCDE8AC008AF383 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7998B9932BCDE929008AF383 /* ScalesTrainerTestingApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScalesTrainerTestingApp.swift; sourceTree = "<group>"; };
+		7998B9942BCDE929008AF383 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7998B9962BCDE929008AF383 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7998B9982BCDE929008AF383 /* ScaleMatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleMatcher.swift; sourceTree = "<group>"; };
+		7998B9992BCDE929008AF383 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		7998B99B2BCDE929008AF383 /* AudioKit_AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioKit_AudioManager.swift; sourceTree = "<group>"; };
+		7998B99C2BCDE929008AF383 /* TapHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapHandler.swift; sourceTree = "<group>"; };
+		7998B99D2BCDE929008AF383 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		7998B99E2BCDE929008AF383 /* Scale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scale.swift; sourceTree = "<group>"; };
+		7998B9A02BCDE929008AF383 /* FFTView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFTView.swift; sourceTree = "<group>"; };
+		7998B9A12BCDE929008AF383 /* Logview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logview.swift; sourceTree = "<group>"; };
+		7998B9A22BCDE929008AF383 /* InputDevicePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputDevicePicker.swift; sourceTree = "<group>"; };
+		7998B9BA2BCDF286008AF383 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		79BF6B912BCDF4110092CDDF /* one_note_48.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = one_note_48.m4a; sourceTree = "<group>"; };
+		79BF6B922BCDF4110092CDDF /* one_note_60.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = one_note_60.m4a; sourceTree = "<group>"; };
+		79BF6B932BCDF4110092CDDF /* 2_oct_strt_72_slow.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2_oct_strt_72_slow.m4a; sourceTree = "<group>"; };
+		79BF6B942BCDF4110092CDDF /* 2_oct_strt_72_fast_staccato.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2_oct_strt_72_fast_staccato.m4a; sourceTree = "<group>"; };
+		79BF6B952BCDF4110092CDDF /* one_note_72.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = one_note_72.m4a; sourceTree = "<group>"; };
+		79BF6B962BCDF4110092CDDF /* 4_octave_major_10ths.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4_octave_major_10ths.m4a; sourceTree = "<group>"; };
+		79BF6B972BCDF4110092CDDF /* 4_octave_Aminor_rh.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4_octave_Aminor_rh.m4a; sourceTree = "<group>"; };
+		79BF6B982BCDF4110092CDDF /* 1_octave_slow.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1_octave_slow.m4a; sourceTree = "<group>"; };
+		79BF6B992BCDF4110092CDDF /* 4_octave_fast.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4_octave_fast.m4a; sourceTree = "<group>"; };
+		79BF6B9A2BCDF4110092CDDF /* 4_octave_Aminor_lh.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4_octave_Aminor_lh.m4a; sourceTree = "<group>"; };
+		79BF6B9B2BCDF4110092CDDF /* violin_1_octave_slow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = violin_1_octave_slow.wav; sourceTree = "<group>"; };
+		79BF6B9C2BCDF4110092CDDF /* church_4_octave_Cmajor_RH.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = church_4_octave_Cmajor_RH.m4a; sourceTree = "<group>"; };
+		79BF6B9D2BCDF4110092CDDF /* 2_oct_strt_72_medium.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2_oct_strt_72_medium.m4a; sourceTree = "<group>"; };
+		79BF6B9E2BCDF4110092CDDF /* 4_octave_medium.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4_octave_medium.m4a; sourceTree = "<group>"; };
+		79BF6B9F2BCDF4110092CDDF /* 3_octave_fast_48.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3_octave_fast_48.m4a; sourceTree = "<group>"; };
+		79BF6BA02BCDF4110092CDDF /* 4_octave_slow.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4_octave_slow.m4a; sourceTree = "<group>"; };
+		79BF6BA12BCDF4110092CDDF /* 3_octave_slow_trim.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3_octave_slow_trim.m4a; sourceTree = "<group>"; };
+		79BF6BA22BCDF4110092CDDF /* 2_oct_strt_72_slow_staccato.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2_oct_strt_72_slow_staccato.m4a; sourceTree = "<group>"; };
+		79BF6BA32BCDF4110092CDDF /* 4_octave_two_hands.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4_octave_two_hands.m4a; sourceTree = "<group>"; };
+		79BF6BA42BCDF4110092CDDF /* middle_C.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = middle_C.m4a; sourceTree = "<group>"; };
+		79BF6BA52BCDF4110092CDDF /* church_4_octave_AflatMajor_RH_fast.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = church_4_octave_AflatMajor_RH_fast.m4a; sourceTree = "<group>"; };
+		79BF6BA62BCDF4110092CDDF /* 4_octave_Aminor_both_hands.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4_octave_Aminor_both_hands.m4a; sourceTree = "<group>"; };
+		79BF6BA72BCDF4110092CDDF /* church_4_octave_Cmajor_LH.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = church_4_octave_Cmajor_LH.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +99,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7998B9B32BCDE959008AF383 /* AudioKitUI in Frameworks */,
+				7998B9B62BCDE976008AF383 /* AudioKitEX in Frameworks */,
+				7998B9B92BCDE99E008AF383 /* SoundpipeAudioKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +111,7 @@
 		7998B9782BCDE8AB008AF383 = {
 			isa = PBXGroup;
 			children = (
+				79BF6B902BCDF4110092CDDF /* audio */,
 				7998B9832BCDE8AB008AF383 /* ScalesTrainerTesting */,
 				7998B9822BCDE8AB008AF383 /* Products */,
 			);
@@ -51,8 +128,8 @@
 		7998B9832BCDE8AB008AF383 /* ScalesTrainerTesting */ = {
 			isa = PBXGroup;
 			children = (
+				7998B9922BCDE929008AF383 /* ScalesTrainerTesting */,
 				7998B9842BCDE8AB008AF383 /* ScalesTrainerTestingApp.swift */,
-				7998B9862BCDE8AB008AF383 /* ContentView.swift */,
 				7998B9882BCDE8AC008AF383 /* Assets.xcassets */,
 				7998B98A2BCDE8AC008AF383 /* Preview Content */,
 			);
@@ -65,6 +142,89 @@
 				7998B98B2BCDE8AC008AF383 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7998B9922BCDE929008AF383 /* ScalesTrainerTesting */ = {
+			isa = PBXGroup;
+			children = (
+				7998B9932BCDE929008AF383 /* ScalesTrainerTestingApp.swift */,
+				7998B9942BCDE929008AF383 /* Assets.xcassets */,
+				7998B9952BCDE929008AF383 /* Preview Content */,
+				7998B9972BCDE929008AF383 /* Model */,
+				7998B99F2BCDE929008AF383 /* Views */,
+				7998B9BA2BCDF286008AF383 /* ContentView.swift */,
+			);
+			name = ScalesTrainerTesting;
+			sourceTree = "<group>";
+		};
+		7998B9952BCDE929008AF383 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7998B9962BCDE929008AF383 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7998B9972BCDE929008AF383 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7998B9982BCDE929008AF383 /* ScaleMatcher.swift */,
+				7998B9992BCDE929008AF383 /* Logger.swift */,
+				7998B99A2BCDE929008AF383 /* Audio */,
+				7998B99D2BCDE929008AF383 /* Util.swift */,
+				7998B99E2BCDE929008AF383 /* Scale.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7998B99A2BCDE929008AF383 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				7998B99B2BCDE929008AF383 /* AudioKit_AudioManager.swift */,
+				7998B99C2BCDE929008AF383 /* TapHandler.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		7998B99F2BCDE929008AF383 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7998B9A02BCDE929008AF383 /* FFTView.swift */,
+				7998B9A12BCDE929008AF383 /* Logview.swift */,
+				7998B9A22BCDE929008AF383 /* InputDevicePicker.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		79BF6B902BCDF4110092CDDF /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				79BF6B912BCDF4110092CDDF /* one_note_48.m4a */,
+				79BF6B922BCDF4110092CDDF /* one_note_60.m4a */,
+				79BF6B932BCDF4110092CDDF /* 2_oct_strt_72_slow.m4a */,
+				79BF6B942BCDF4110092CDDF /* 2_oct_strt_72_fast_staccato.m4a */,
+				79BF6B952BCDF4110092CDDF /* one_note_72.m4a */,
+				79BF6B962BCDF4110092CDDF /* 4_octave_major_10ths.m4a */,
+				79BF6B972BCDF4110092CDDF /* 4_octave_Aminor_rh.m4a */,
+				79BF6B982BCDF4110092CDDF /* 1_octave_slow.m4a */,
+				79BF6B992BCDF4110092CDDF /* 4_octave_fast.m4a */,
+				79BF6B9A2BCDF4110092CDDF /* 4_octave_Aminor_lh.m4a */,
+				79BF6B9B2BCDF4110092CDDF /* violin_1_octave_slow.wav */,
+				79BF6B9C2BCDF4110092CDDF /* church_4_octave_Cmajor_RH.m4a */,
+				79BF6B9D2BCDF4110092CDDF /* 2_oct_strt_72_medium.m4a */,
+				79BF6B9E2BCDF4110092CDDF /* 4_octave_medium.m4a */,
+				79BF6B9F2BCDF4110092CDDF /* 3_octave_fast_48.m4a */,
+				79BF6BA02BCDF4110092CDDF /* 4_octave_slow.m4a */,
+				79BF6BA12BCDF4110092CDDF /* 3_octave_slow_trim.m4a */,
+				79BF6BA22BCDF4110092CDDF /* 2_oct_strt_72_slow_staccato.m4a */,
+				79BF6BA32BCDF4110092CDDF /* 4_octave_two_hands.m4a */,
+				79BF6BA42BCDF4110092CDDF /* middle_C.m4a */,
+				79BF6BA52BCDF4110092CDDF /* church_4_octave_AflatMajor_RH_fast.m4a */,
+				79BF6BA62BCDF4110092CDDF /* 4_octave_Aminor_both_hands.m4a */,
+				79BF6BA72BCDF4110092CDDF /* church_4_octave_Cmajor_LH.m4a */,
+			);
+			name = audio;
+			path = ScalesTrainerTesting/audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +243,11 @@
 			dependencies = (
 			);
 			name = ScalesTrainerTesting;
+			packageProductDependencies = (
+				7998B9B22BCDE959008AF383 /* AudioKitUI */,
+				7998B9B52BCDE976008AF383 /* AudioKitEX */,
+				7998B9B82BCDE99E008AF383 /* SoundpipeAudioKit */,
+			);
 			productName = ScalesTrainerTesting;
 			productReference = 7998B9812BCDE8AB008AF383 /* ScalesTrainerTesting.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +276,11 @@
 				Base,
 			);
 			mainGroup = 7998B9782BCDE8AB008AF383;
+			packageReferences = (
+				7998B9B12BCDE959008AF383 /* XCLocalSwiftPackageReference "../../Downloads/AudioKitUI-main" */,
+				7998B9B42BCDE976008AF383 /* XCRemoteSwiftPackageReference "AudioKitEX" */,
+				7998B9B72BCDE99E008AF383 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */,
+			);
 			productRefGroup = 7998B9822BCDE8AB008AF383 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,8 +295,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79BF6BB52BCDF4110092CDDF /* 4_octave_medium.m4a in Resources */,
+				79BF6BBA2BCDF4110092CDDF /* 4_octave_two_hands.m4a in Resources */,
+				79BF6BB42BCDF4110092CDDF /* 2_oct_strt_72_medium.m4a in Resources */,
+				79BF6BAB2BCDF4110092CDDF /* 2_oct_strt_72_fast_staccato.m4a in Resources */,
+				79BF6BB82BCDF4110092CDDF /* 3_octave_slow_trim.m4a in Resources */,
+				79BF6BA82BCDF4110092CDDF /* one_note_48.m4a in Resources */,
+				79BF6BB32BCDF4110092CDDF /* church_4_octave_Cmajor_RH.m4a in Resources */,
+				79BF6BAE2BCDF4110092CDDF /* 4_octave_Aminor_rh.m4a in Resources */,
+				7998B9A62BCDE929008AF383 /* Preview Assets.xcassets in Resources */,
+				79BF6BAA2BCDF4110092CDDF /* 2_oct_strt_72_slow.m4a in Resources */,
+				79BF6BB22BCDF4110092CDDF /* violin_1_octave_slow.wav in Resources */,
+				79BF6BB12BCDF4110092CDDF /* 4_octave_Aminor_lh.m4a in Resources */,
+				79BF6BB92BCDF4110092CDDF /* 2_oct_strt_72_slow_staccato.m4a in Resources */,
 				7998B98C2BCDE8AC008AF383 /* Preview Assets.xcassets in Resources */,
+				79BF6BA92BCDF4110092CDDF /* one_note_60.m4a in Resources */,
+				79BF6BBC2BCDF4110092CDDF /* church_4_octave_AflatMajor_RH_fast.m4a in Resources */,
+				79BF6BB02BCDF4110092CDDF /* 4_octave_fast.m4a in Resources */,
+				79BF6BBD2BCDF4110092CDDF /* 4_octave_Aminor_both_hands.m4a in Resources */,
+				79BF6BB62BCDF4110092CDDF /* 3_octave_fast_48.m4a in Resources */,
+				79BF6BB72BCDF4110092CDDF /* 4_octave_slow.m4a in Resources */,
+				79BF6BAF2BCDF4110092CDDF /* 1_octave_slow.m4a in Resources */,
+				79BF6BAC2BCDF4110092CDDF /* one_note_72.m4a in Resources */,
+				7998B9A52BCDE929008AF383 /* Assets.xcassets in Resources */,
+				79BF6BBB2BCDF4110092CDDF /* middle_C.m4a in Resources */,
+				79BF6BAD2BCDF4110092CDDF /* 4_octave_major_10ths.m4a in Resources */,
 				7998B9892BCDE8AC008AF383 /* Assets.xcassets in Resources */,
+				79BF6BBE2BCDF4110092CDDF /* church_4_octave_Cmajor_LH.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +332,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7998B9872BCDE8AB008AF383 /* ContentView.swift in Sources */,
+				7998B9A82BCDE929008AF383 /* Logger.swift in Sources */,
+				7998B9AE2BCDE929008AF383 /* Logview.swift in Sources */,
+				7998B9BB2BCDF286008AF383 /* ContentView.swift in Sources */,
+				7998B9AD2BCDE929008AF383 /* FFTView.swift in Sources */,
+				7998B9A42BCDE929008AF383 /* ScalesTrainerTestingApp.swift in Sources */,
+				7998B9AF2BCDE929008AF383 /* InputDevicePicker.swift in Sources */,
+				7998B9A92BCDE929008AF383 /* AudioKit_AudioManager.swift in Sources */,
+				7998B9AB2BCDE929008AF383 /* Util.swift in Sources */,
+				7998B9A72BCDE929008AF383 /* ScaleMatcher.swift in Sources */,
+				7998B9AA2BCDE929008AF383 /* TapHandler.swift in Sources */,
+				7998B9AC2BCDE929008AF383 /* Scale.swift in Sources */,
 				7998B9852BCDE8AB008AF383 /* ScalesTrainerTestingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +549,49 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		7998B9B12BCDE959008AF383 /* XCLocalSwiftPackageReference "../../Downloads/AudioKitUI-main" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../Downloads/AudioKitUI-main";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7998B9B42BCDE976008AF383 /* XCRemoteSwiftPackageReference "AudioKitEX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKitEX.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+		7998B9B72BCDE99E008AF383 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/SoundpipeAudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7998B9B22BCDE959008AF383 /* AudioKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AudioKitUI;
+		};
+		7998B9B52BCDE976008AF383 /* AudioKitEX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7998B9B42BCDE976008AF383 /* XCRemoteSwiftPackageReference "AudioKitEX" */;
+			productName = AudioKitEX;
+		};
+		7998B9B82BCDE99E008AF383 /* SoundpipeAudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7998B9B72BCDE99E008AF383 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */;
+			productName = SoundpipeAudioKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7998B9792BCDE8AB008AF383 /* Project object */;
 }
