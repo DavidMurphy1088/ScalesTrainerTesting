@@ -7,12 +7,6 @@ struct FFTContentView: View {
     @StateObject private var audioManager = AudioManager1()
     @State var fftView: SpectrogramFlatView?
     
-//    func getView(node:Node) -> some View {
-//        let v =  SpectrogramFlatView(node: node).padding()
-//        let s = v.spectogram
-//        return v
-//    }
-    
     var body: some View {
         VStack {
             Spacer()
